@@ -30,3 +30,21 @@
 .dropdown-toggle {
   outline: 0;
 }
+
+.bd-placeholder-img {
+  font-size: 1.125rem;
+  text-anchor: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+.edit-img, .delete-img {
+  width: 30px; /* 원하는 너비로 설정 */
+  height: auto; /* 가로 세로 비율 유지 */
+}
+
+@media (min-width: 768px) {
+  .bd-placeholder-img-lg {
+    font-size: 3.5rem;
+  }
+}
