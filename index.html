@@ -68,16 +68,6 @@
         <a class="navbar-brand">List</a>
         <form class="d-flex">
           
-          <select>
-            <option disabled selected>RC</option>
-            <option value="one">손양원</option>
-            <option value="one">카이퍼</option>
-            <option value="one">장기려</option>
-            <option value="two">토레이</option>
-            <option value="three">카마이클</option>
-          </select>
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success" type="submit">Search</button>
           <a class="btn btn-success" href="add.html">Add</a>
 
         </form>
@@ -164,24 +154,35 @@
             <img class="delete-img" src="./delete.png" alt="삭제" onclick="confirm('게시물을 삭제할까요?')">
           </td>
         </tr>
+        <tr>
+          <td>7</td>
+          <td ><a href="view.html">나한동</a></td>
+          <td>17</td>
+          <td>상담심리 / 컴퓨터</td>
+          <td>장기려</td>
+          <td>
+            <img class="edit-img" src="./update.png" alt="수정" onclick="goToEditPage()">
+            <img class="delete-img" src="./delete.png" alt="삭제" onclick="confirm('게시물을 삭제할까요?')">
+          </td>
+        </tr>
       </tbody>
     </table>
-    <div class="number">
-      <button type="button" class="btn btn-outline-secondary">&lt;&lt;</button>
-      <button type="button" class="btn btn-outline-secondary">1</button>
-      <button type="button" class="btn btn-outline-secondary">2</button>
-      <button type="button" class="btn btn-outline-secondary">3</button>
-      <button type="button" class="btn btn-outline-secondary">&gt;&gt;</button>
+    <br>
+    <div class="number d-flex justify-content-center">
+      <button type="button" class="btn btn-outline-secondary mx-1">&lt;&lt;</button>
+      <button type="button" class="btn btn-outline-secondary mx-1">1</button>
+      <button type="button" class="btn btn-outline-secondary mx-1">2</button>
+      <button type="button" class="btn btn-outline-secondary mx-1">3</button>
+      <button type="button" class="btn btn-outline-secondary mx-1">&gt;&gt;</button>
   </div>
   
   </div>
 </div>
-
 </main>
-
-
-    <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
-
-      
+<footer class="container fixed-bottom">
+  <hr class="featurette-divider">
+  <p class="float-end"><a href="#">Back to top</a></p>
+  <p>&copy; 2020–2023 Handong.Company, Inc. &middot;</p>
+</footer>
   </body>
 </html>

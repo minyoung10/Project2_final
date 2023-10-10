@@ -46,7 +46,14 @@
             </form> 
         </div>
     </main>
-    <script src="../assets/dist/js/bootstrap.bundle.min.js">
+
+    <footer class="container fixed-bottom">
+      <hr class="featurette-divider">
+      <p class="float-end"><a href="#">Back to top</a></p>
+      <p>&copy; 2020–2023 Handong.Company, Inc. &middot;</p>
+    </footer>
+
+    <script>
         function validateForm() {
             var name = document.forms["myForm"]["name"].value;
             var studentID = document.forms["myForm"]["studentID"].value;
@@ -65,7 +72,7 @@
                 alert("전공을 입력하세요.");
                 return false;
             }
-            if (rc == "RC") {
+            if (rc == "RC선택") {
                 alert("RC를 선택하세요.");
                 return false;
             }

@@ -33,19 +33,22 @@
                 <br> RC : 손양원
                 <br>
                 <br>
-                <img class="edit-img" src="./update.png" alt="수정" onclick="goToEditPage()">
-                <img class="delete-img" src="./delete.png" alt="삭제" onclick="confirm('게시물을 삭제할까요?')">
 
+                <button type="button" class="btn btn-primary" onclick="goToEditPage()">Edit   </button>
+                <button type="button" class="btn btn-dark" onclick="confirm('게시물을 삭제할까요?')">Delete</button>
             </form> 
         </div>
     </main>
+
+    <footer class="container fixed-bottom">
+        <hr class="featurette-divider">
+        <p class="float-end"><a href="#">Back to top</a></p>
+        <p>&copy; 2020–2023 Handong.Company, Inc. &middot;</p>
+      </footer>
     <script>
         function goToEditPage() {
             window.location.href = 'edit.html';
         }
     </script>
-    
-
-    <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

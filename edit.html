@@ -27,12 +27,12 @@
 
         <div class="container">  
             <form name="myForm" action="/action_page.php" method="post" onsubmit="return validateForm()">
-                <br>이름 : <input type="text" name="name"><br>
-                <br>학번 : <input type="text" name="studentID"><br>
-                <br> 전공(1전공/ 2전공) : <input type="text" name="major"><br>
+                <br>이름 : <input type="text" name="name" value="김한동"><br>
+                <br>학번 : <input type="text" name="studentID" value="22"><br>
+                <br> 전공(1전공/ 2전공) : <input type="text" name="major" value="컴퓨터심화전공"><br>
                 <br> RC :
                 <select name="rc">
-                    <option disabled selected>RC</option>   
+                    <option disabled >RC</option>   
                     <option value="one">손양원</option>
                     <option value="two">카이퍼</option>
                     <option value="three">장기려</option>
@@ -45,7 +45,12 @@
             </form> 
         </div>
     </main>
-    <script src="../assets/dist/js/bootstrap.bundle.min.js">
+    <footer class="container fixed-bottom">
+        <hr class="featurette-divider">
+        <p class="float-end"><a href="#">Back to top</a></p>
+        <p>&copy; 2020–2023 Handong.Company, Inc. &middot;</p>
+    </footer>
+    <script>
         function validateForm() {
             var name = document.forms["myForm"]["name"].value;
             var studentID = document.forms["myForm"]["studentID"].value;
